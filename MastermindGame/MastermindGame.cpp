@@ -39,11 +39,11 @@ int main()
 
         cout << "Guess: ";
         printVector(guess);
-        cout << " PegScore: " + pegScore;
+        cout << "\tPegScore: " + pegScore;
 
         adjustCombinationPool(guess, pegScore);
 
-        cout << " Pool Size: " + to_string(combinationPool.size()) << endl;
+        cout << "\tPool Size: " + to_string(combinationPool.size()) << endl;
 
         if (pegScore == "4 0") {
             won = true;
